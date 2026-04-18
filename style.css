@@ -68,10 +68,11 @@ a:hover {
 }
 
 #Accueil {
-    padding-left : 70px;
-    padding-top: 250px;
+    padding: 250px;
+    padding-left: 300px;
     justify-self: center;
-    padding-bottom: 250px;
+    width: 60%;
+
 }
 
 #Accueil p {
@@ -91,12 +92,20 @@ a:hover {
     font-size: 70px;
     font-weight: 700;
     color : #626665;
-    margin : 0;
+    margin-top : -200px;
 }
 
 #Accueil h1 span {
     color : #00ffc8; 
 
+}
+
+#photo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 0;
 }
 
 #Accueil #defiler {
@@ -115,7 +124,7 @@ a:hover {
         width: 0;
     }
     to {
-        width: 85%;
+        width: 56%;
     }
 }
 
@@ -226,6 +235,7 @@ button:hover {
 
 .table .colonne {
     padding: 15px;
+    border: 1px solid #00ffc839;
 }
 
 #tableau {
