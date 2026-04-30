@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0a0a0f; 
     margin: 0;
@@ -68,11 +72,16 @@ a:hover {
 }
 
 #Accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 250px;
     padding-left: 300px;
-    justify-self: center;
     width: 60%;
+}
 
+#Accueil div {
+    justify-self: left;
 }
 
 #Accueil p {
@@ -92,7 +101,6 @@ a:hover {
     font-size: 70px;
     font-weight: 700;
     color : #626665;
-    margin-top : -200px;
 }
 
 #Accueil h1 span {
@@ -103,8 +111,6 @@ a:hover {
 #photo {
     width: 200px;
     height: 200px;
-    display: flex;
-    justify-self: flex-end;
     margin-right: 0;
 }
 
@@ -124,7 +130,7 @@ a:hover {
         width: 0;
     }
     to {
-        width: 56%;
+        width: 500px;
     }
 }
 
@@ -341,6 +347,12 @@ button:hover {
     cursor: pointer;
 }
 
+#Projets #tableau3 .ligne:hover .pte:last-child {
+    color: #00ffc8;
+    transform: translate(4px, -4px);
+    transition: 0.2s;
+}
+
 #Projets #tableau3 .colonne {
     padding: 35px 0 55px 55px;
     position: relative;
@@ -411,6 +423,7 @@ button:hover {
 #Contact #Cp {
     color: #666672;
     font-size: 18px;
+    margin-right: 25px;
     margin-bottom: 50px;
     padding-left: 153px;
 }
@@ -439,6 +452,12 @@ button:hover {
     padding-left: 40px;
     cursor: pointer;
     border-color: #00ffc8;
+}
+
+#Contact .Cpc:hover span{
+    transform: translateX(4px);
+    transition: 0.5s;
+    color: #ffff;
 }
 
 #terminal {
@@ -534,4 +553,8 @@ footer p span {
 
 footer #descr {
     margin-left: 50px;
+}
+
+@media (max-width: 1200px) {
+    
 }
