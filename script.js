@@ -40,8 +40,6 @@ function navig(){
 }
 
 
-//------------------------Fait par IA------------------------//
-
 const navItems = document.querySelectorAll('.aligner[data-section]');
 const sections = [...navItems].map(item => {
     const id = item.dataset.section;
