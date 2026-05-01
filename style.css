@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,8 +26,8 @@ header * {
 
 #portfolio {
     color : #626665;
-        font-size: 20px;
-
+    font-size: 20px;
+    z-index: 9999;
 }
 
 #portfolio span {
@@ -36,10 +40,19 @@ nav {
     
 }
 
+#barre-nav {
+    display: none;
+    font-size: 30px;
+    color: #00ffc8;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
 .items {
     display: flex;
     list-style: none;
     justify-content: flex-end;
+    z-index: 999;
 }
 
 .aligner {
@@ -60,8 +73,13 @@ a:hover {
 }
 
 #contenu {
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    scroll-margin-top: 100px;
 }
 
 #plan {
@@ -75,9 +93,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 250px;
-    padding-left: 300px;
-    width: 60%;
+    padding: 150px 10%;
+    width: 100%;
 }
 
 #Accueil div {
@@ -142,33 +159,26 @@ a:hover {
 
 #bout {
     background-color: #00ffc8;
+    color: #101010;
     margin-left: 0;
 }
 
-#bout a {
-    color : #101010;
-}
-
 .boutton {
+    display: inline-block;
     background-color: transparent;
-    border-color: #e2dede;
+    border: 1px solid #e2dede;
     margin: 20px;
     padding: 17px;
     text-align: center;
     cursor: pointer;
-
-}
-
-.boutton a {
     text-decoration: none;
     font-family: 'Syne';
-    color : #e2dede;
+    color: #e2dede;
     font-weight: 600;
     letter-spacing: 1.5px;
-
 }
 
-button:hover {
+.boutton:hover {
     background-color : #b4aaaa31;
     border-color: #00ffc8;
 }
@@ -178,7 +188,8 @@ button:hover {
 }
 
 .sec {
-    padding-top: 150px;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 
 #Apropos {
@@ -306,7 +317,6 @@ button:hover {
     color: #666672;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 153px;
 }
 
 #app li::marker {
@@ -338,7 +348,12 @@ button:hover {
     transition: 0.5s;
 }
 
-#Projets button:hover {
+#Projets #tableau3 button {
+    position: relative;
+    z-index: 2;
+}
+
+#Projets #tableau3 button:hover {
     color: #00ffc8;
     border-color: #00ffc8;
 }
@@ -541,6 +556,7 @@ footer {
     height: 100%;
     font-size: 18px;
     background-color: #18181a;
+    justify-content:space-around;
 }
 
 footer p {
@@ -551,10 +567,160 @@ footer p span {
     color: #00ffc8;
 }
 
-footer #descr {
-    margin-left: 50px;
+@media (max-width: 1200px) {
+    #Accueil {
+        padding: 150px 80px;
+        width: 100%;
+    }
+
+    #Accueil h1 {
+        font-size: 60px;
+    }
+
+    #tableau,
+    #tableau2, #tableau3 {
+        width: 80%;
+    }
 }
 
-@media (max-width: 1200px) {
-    
+@media (max-width: 963px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #barre-nav {
+        display: block;
+    }
+
+    .items {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #262630;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .items.active {
+        display: flex;
+    }
+
+    .items a {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #Accueil {
+        padding: 150px 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Accueil h1 {
+        font-size: 55px;
+    }
+
+    #tableau,
+    #tableau2, #tableau3 {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .partie,
+    .sec .titre,
+    #Apropos #description {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #photo {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #barre-nav {
+        display: block;
+    }
+
+    .items {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #262630;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .items.active {
+        display: flex;
+    }
+
+    .items a {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #Accueil {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px;
+    }
+
+    #Accueil h1 {
+        font-size: 40px;
+    }
+
+    #photo {
+        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .boutton {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .partie,
+    .sec .titre,
+    #Apropos #description,
+    #Apropos #chercher,
+    #Contact #Cp {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #tableau,
+    #tableau2, #tableau3 {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    #tableau3 .colonne {
+        padding: 20px;
+    }
+
+    #terminal {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
