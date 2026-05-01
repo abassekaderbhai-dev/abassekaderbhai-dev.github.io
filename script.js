@@ -3,74 +3,74 @@ let github = 'https://github.com/abassekaderbhai-dev';
 
 let git = document.querySelectorAll('#tableau3 .ligne');
 for (let i = 0; i<git.length; i++){
-    git[i].addEventListener('click', function(){
-        window.open(git[i].dataset.url, '_blank');
-    })
+    git[i].addEventListener('click', () => window.open(git[i].dataset.url, '_blank'));
 }
 
 let clicklink = document.getElementById('link');
-clicklink.addEventListener('click', function(){
-    window.open(linkedin, '_blank');
-})
+clicklink.addEventListener('click', () => window.open(linkedin, '_blank'));
 
 let clickgit = document.getElementById('gith');
-clickgit.addEventListener('click', function(){
-    window.open(github, '_blank');
-})
+clickgit.addEventListener('click', () => window.open(github, '_blank'));
 
+
+let barre = document.getElementById('barre-nav');
+let menu = document.querySelector('.items');
+
+barre.addEventListener('click', () => {
+    if (menu.classList.contains('active')){
+        menu.classList.remove('active');
+    }
+    else {
+        menu.classList.add('active');
+    }
+});
+
+document.querySelectorAll('.items a').forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+});
 
 let nav = document.querySelectorAll('.aligner');
 for (let i = 0; i<nav.length; i++){
-    nav[i].addEventListener('click', navig);
+    nav[i].addEventListener('click', function(event){
+        if (event.target.nodeName !== 'A'){return;}
+        navig(this);
+    });
 }
 
-function navig(){
+function navig(element){
     for (let i = 0; i<nav.length; i++){
-        if (nav[i] !== this){
+        if (nav[i] !== element){
             nav[i].style.border = 'none';
             nav[i].style.backgroundColor = 'transparent';
-            nav[i].style.color = '';
+            nav[i].children[0].style.color = '';
         }
     }
-    this.style.border = '2px solid black';
-    this.style.borderRadius = '25px';
-    this.style.backgroundColor = '#9acdc244';
-    this.style.transition = '0.7s';
-    this.style.color = '#00ffc8';
+    element.style.border = '2px solid #00ffc8';
+    element.style.borderRadius = '25px';
+    element.style.backgroundColor = '#9acdc244';
+    element.style.transition = '0.7s';
+    element.children[0].style.color = '#00ffc8';
 }
 
+let sections = document.querySelectorAll('section');
+let observer = new IntersectionObserver((secteur) => {
+    secteur.forEach(sect => {
+        if (sect.isIntersecting) {
+            let id = sect.target.id;
 
-const navItems = document.querySelectorAll('.aligner[data-section]');
-const sections = [...navItems].map(item => {
-    const id = item.dataset.section;
-    return document.getElementById(id);
-});
-
-// Observer
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const id = entry.target.id;
-
-            navItems.forEach(el => {
-                el.style.border = 'none';
-                el.style.backgroundColor = 'transparent';
-                el.style.color = '';
-            });
-
-            const active = document.querySelector(`.aligner[data-section="${id}"]`);
-            if (active) {
-                active.style.transition = '0.7s';
-                active.style.border = '2px solid black';
-                active.style.borderRadius = '25px';
-                active.style.backgroundColor = '#9acdc27d';
-                active.style.color = '#00ffc8';
+            let active = document.querySelectorAll('.aligner');
+            for (let activation of active){
+                if (activation.dataset.section === id){
+                    navig(activation);
+                }
             }
         }
     });
 }, { threshold: 0, rootMargin: "-40% 0px -40% 0px" });
 
-// Observe chaque section
+
 sections.forEach(sec => observer.observe(sec));
 
 
