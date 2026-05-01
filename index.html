@@ -4,23 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Portfolio - Abasse KADERBHAI</title>
-        <link rel="icon" type="image/png" sizes="128*128" href="logo.png">
+        <link rel="icon" href="/logo.png" sizes="any">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
     </head>
-    <body>
-        
+    <body>        
         <header class="header">
             <nav>
+                <div id="barre-nav">☰</div>
                 <span id="portfolio" class="aligner">~/<span>portfolio</span></span>
                 <ul class="items">
-                    <a href="#Accueil"><li class="aligner" data-section="Accueil">ACCUEIL</li></a>
-                    <a href="#Apropos"><li class="aligner" data-section="Apropos">À PROPOS</li></a>
-                    <a href="#Competences"><li class="aligner" data-section="Competences">COMPETENCES</li></a>
-                    <a href="#Projets"><li class="aligner" data-section="Projets">PROJETS</li></a>
-                    <a href="#Contact"><li class="aligner" data-section="Contact">CONTACT</li></a>
+                    <li class="aligner" data-section="Accueil"><a href="#Accueil">ACCUEIL</a></li>
+                    <li class="aligner" data-section="Apropos"><a href="#Apropos">À PROPOS</a></li>
+                    <li class="aligner" data-section="Competences"><a href="#Competences">COMPETENCES</a></li>
+                    <li class="aligner" data-section="Projets"><a href="#Projets">PROJETS</a></li>
+                    <li class="aligner" data-section="Contact"><a href="#Contact">CONTACT</a></li>
                 </ul>    
             </nav>
         </header>
@@ -32,9 +32,9 @@
                         <p id="etudiant">ÉTUDIANT BUT INFORMATIQUE · 1ère ANNÉE</p>
                         <h1>Abasse <br> <span>KADERBHAI</span></h1>
                         <p id="defiler">Investi dans l'apprentissage et la pratique du code.</p>
-                        <button class="boutton" id="bout"><a href="index.html#Projets">VOIR MES PROJETS</a></button>
-                        <button class="boutton"><a href="https://github.com/abassekaderbhai-dev" target="_blank">GITHUB &nbsp;↗</a></button>
-                        <button class="boutton"><a href="index.html#Contact">ME CONTACTER</a></button>
+                        <a href="#Projets" class="boutton" id="bout">VOIR MES PROJETS</a>
+                        <a href="https://github.com/abassekaderbhai-dev" target="_blank" class="boutton">GITHUB &nbsp;↗</a>
+                        <a href="#Contact" class="boutton">ME CONTACTER</a>
                     </div>
                     <img src="photo.png" alt="photo de profil" id="photo">
                 </section>
@@ -223,7 +223,7 @@
             </section>
         </div>
         <footer>
-            <p>© 2026 · <span>Abasse KADERBHAI</span> · Portfolio</p> 
+            <p>© 2026 · <span>Abasse KADERBHAI</span> · Portfolio </p> 
             <p id="descr">Le travail parle mieux que les mots.</p>
         </footer>
         <script src="script.js"></script>
