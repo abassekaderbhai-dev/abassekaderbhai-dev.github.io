@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Abasse KADERBHAI </title>
+        <link rel="icon" href="assets/logo.png" sizes="any">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bruit"></div>
+        
+        <header class="header">
+            <a class="portfolio" href="#Accueil"><span>~/</span>abasse</a>
+            <button class="menu-mobile" id="barre-nav" type="button" aria-label="Ouvrir le menu">MENU</button>
+            <nav class="items" id="menu" aria-label="Navigation principale">
+                <a href="#ProjetsPerso">Projets perso</a>
+                <a href="#Projets">Universitaires</a>
+                <a href="#Tester">À tester</a>
+                <a href="#Competences">Compétences</a>
+                <a href="#Parcours">Parcours</a>
+                <a href="#Apropos">À propos</a>
+            </nav>
+            <a class="contact-nav" href="#Contact">Contact <span>↗</span></a>
+        </header>
+        
+        <main>
+            <section class="accueil sec" id="Accueil">
+                <div class="etudiant"><span class="point"></span>~/abasse/PORTFOLIO</div>
+                <div class="accueil-contenu">
+                    <div>
+                        <h1>Abasse<br><em>Kaderbhai</em></h1>
+                        <p class="description-accueil">Quand quelque chose m’intéresse, j’aime comprendre comment ça marche, expérimenter et surtout voir jusqu’où je peux aller en essayant de le construire moi-même.</p>
+                        <div class="bouttons">
+                            <a class="boutton boutton-principal" href="#ProjetsPerso">Voir mes projets <span>↓</span></a>
+                            <a class="boutton boutton-simple" href="https://github.com/abassekaderbhai-dev" target="_blank" rel="noreferrer">GitHub ↗</a>
+                            <a class="boutton boutton-simple" href="assets/cv/CV_KADERBHAI_Abasse_BUT INFORMATIQUE.pdf" target="_blank" rel="noreferrer">CV - PDF ↗</a>
+                        </div>
+                    </div>
+        
+                    <aside class="profil-card fenetre" aria-label="Mon profil">
+                        <div class="barre-fenetre">
+                            <div class="points-fenetre" aria-hidden="true">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <span>~/abasse/profile-card</span>
+                            <b>AK</b>
+                        </div>
+                        <div class="profil-contenu">
+                            <div class="profil-haut">
+                                <span>PROFIL</span>
+                                <b>La Réunion, France</b>
+                            </div>
+                            <div class="profil-identite">
+                                <div id="img-profil"><img src="assets/photo.png" alt=""></div>
+                                <div>
+                                    <h2>Étudiant à l'IUT de Villetaneuse</h2>
+                                    <span>18 ans</span>
+                                </div>
+                            </div>
+                            <p class="profil-texte">
+                                Je m’adapte assez facilement aux nouveaux environnements et 
+                                j’aime avancer en découvrant les choses au fur et à mesure.
+                            </p>
+                            <div class="profil-infos">
+                                <div>
+                                    <span>Parcours</span>
+                                    <strong>BUT Informatique : 1re année terminée</strong>
+                                </div>
+                                <div>
+                                    <span>Objectif</span>
+                                    <strong>Poursuivre vers l'ingénierie informatique</strong>
+                                </div>
+                                <div>
+                                    <span>Technologies</span>
+                                    <strong>Java, Python, SQL, Web, Linux</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </section>
+        
+
+            <section class="sec" id="ProjetsPerso">
+                <div class="entete-sec">
+                    <div class="partie">01 / PROJETS PERSO</div>
+                    <div>
+                        <h2>Mes projets<br><em>personnels.</em></h2>
+                        <p>Des projets réalisés ou prolongés de mon côté, avec plus de liberté pour expérimenter et aller plus loin.</p>
+                    </div>
+                </div>
+
+                <div class="grille-perso">
+                    <article class="projet-perso projet-perso-principal">
+                        <div class="perso-visuel">
+                            <div class="perso-haut"><span>WEB — 01</span><b>HTML / CSS / JS</b></div>
+                            <div class="apercu-perso apercu-tux"><img src="assets/projects/tux/tux.png" alt="Jeu Tux" loading="lazy"></div>
+                        </div>
+
+                        <div class="perso-contenu">
+                            <div class="origine-perso"><span>POINT DE DÉPART</span>Un exercice très simple autour du déplacement d'un personnage en JavaScript.</div>
+                            <h3>Jeu Tux</h3>
+                            <p>Je l'ai ensuite largement fait évoluer en ajoutant un score, un chrono, des collisions et deux modes de jeu : contre un adversaire automatique ou à deux joueurs.</p>
+                            <div class="evolution-perso"><span>Score</span><span>Chrono</span><span>Collisions</span><span>Mode IA</span><span>2 joueurs</span></div>
+                            <button class="lancer-perso" data-demo="tux" type="button">Jouer <span>↗</span></button>
+                        </div>
+                    </article>
+
+                    <article class="projet-perso">
+                        <div class="perso-haut"><span>PYTHON — 02</span><b>TKINTER</b></div>
+                        <div class="apercu-perso icone-calculatrice-perso"><span>+</span><span>×</span><span>−</span><span>÷</span></div>
+                        <h3>Calculatrice</h3>
+                        <p>Une calculatrice réalisée en Python avec Tkinter. Le projet présenté ici reste le fichier Python d'origine.</p>
+                        <button class="lancer-perso" data-demo="calculator" type="button">Voir le projet <span>↗</span></button>
+                    </article>
+
+                    <article class="projet-perso">
+                        <div class="perso-haut"><span>PYTHON — 03</span><b>RÉCURSIVITÉ</b></div>
+                        <div class="apercu-perso apercu-hanoi">
+                            <div class="tour-hanoi"><i></i><span class="disque disque-1"></span><span class="disque disque-2"></span><span class="disque disque-3"></span></div>
+                            <div class="tour-hanoi"><i></i></div>
+                            <div class="tour-hanoi"><i></i></div>
+                        </div>
+                        <h3>Tours de Hanoï</h3>
+                        <p>Un projet Python autour de la récursivité, avec une représentation graphique animée à l'aide de Turtle.</p>
+                        <button class="lancer-perso" data-demo="hanoi" type="button">Voir le projet <span>↗</span></button>
+                    </article>
+
+                    <article class="projet-perso projet-attente">
+                        <div class="perso-haut"><span>04</span><b>À VENIR</b></div>
+                        <div class="apercu-perso apercu-morpion">
+                            <span>X</span><span></span><span>O</span><span></span><span>X</span><span></span><span>O</span><span></span><span>X</span>
+                        </div>
+                        <h3>Morpion</h3>
+                        <p>Un projet personnel que je souhaite intégrer prochainement à cette partie du portfolio.</p>
+                        <button class="lancer-perso" type="button" disabled>À venir</button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="sec" id="Projets">
+                <div class="entete-sec">
+                    <div class="partie">02 / PROJETS UNIVERSITAIRES</div>
+                    <div>
+                        <h2>Mes<br><em>projets.</em></h2>
+                        <p>J'en ai gardé trois en avant parce qu'ils montrent des facettes différentes de ce que j'ai pu travailler durant cette première année : Java, données et algorithmique.</p>
+                    </div>
+                </div>
+        
+                <div class="liste-projets">
+                    <article class="projet" data-projet="findmyword">
+                        <div class="numero-projet">01</div>
+                        <div class="contenu-projet">
+                            <div class="chemin-projet">~/work/findmyword</div>
+                            <h3>FindMyWord</h3>
+                            <p>Le projet Java qui m'a le plus fait progresser sur la structure d'une application : plusieurs classes, des interfaces, des données JSON et des tests.</p>
+                            <div class="technologies"><span>POO</span><span>JAVA</span><span>JSON</span></div>
+                        </div>
+                        <div class="apercu-projet apercu-code" id="img-findmyword"><img src="assets/projects/findmyword/capture-findmyword.png" alt="Screen du jeu FindMyWord" loading="lazy"></div>
+                        <button class="ouvrir-projet" aria-label="Ouvrir FindMyWord">↗</button>
+                    </article>
+        
+                    <article class="projet" data-projet="dataguardians">
+                        <div class="numero-projet">02</div>
+                        <div class="contenu-projet">
+                            <div class="chemin-projet">~/work/dataguardians</div>
+                            <h3>DataGuardians</h3>
+                            <p>Un projet de groupe autour des stations-service, avec une base PostgreSQL, des contraintes, des requêtes et des visualisations Grafana.</p>
+                            <div class="technologies"><span>POSTGRESQL</span><span>SQL</span><span>GRAFANA</span></div>
+                        </div>
+                        <div class="apercu-projet" id="img-dataGuardians"><img src="assets/projects/dataguardians/grafana/01_Indicateurs_cles.png" alt="Dashboard DataGuardians" loading="lazy"></div>
+                        <button class="ouvrir-projet" aria-label="Ouvrir DataGuardians">↗</button>
+                    </article>
+        
+                    <article class="projet" data-projet="mandelbrot">
+                        <div class="numero-projet">03</div>
+                        <div class="contenu-projet">
+                            <div class="chemin-projet">~/work/mandelbrot</div>
+                            <h3>Mandelbrot</h3>
+                            <p>Un projet Python où j'ai travaillé les nombres complexes et l'algorithmique pour arriver à un résultat graphique directement visible.</p>
+                            <div class="technologies"><span>NOMBRES COMPLEXES</span><span>PYTHON</span><span>ALGORITHMIQUE</span></div>
+                        </div>
+                        <div class="apercu-projet" id="img-mandelbrot"><img src="assets/projects/mandelbrot/mandelbrot-original.png" alt="Ensemble de Mandelbrot généré avec le code du projet" loading="lazy"></div>
+                        <button class="ouvrir-projet" aria-label="Ouvrir Mandelbrot">↗</button>
+                    </article>
+                </div>
+        
+                <div class="projets-secondaires">
+                    <div class="titre-secondaire">AUTRES TRAVAUX</div>
+                    <div class="grille-secondaire">
+                        <button class="petit-projet" data-projet="systems"><span>04</span><strong>Systèmes & réseau</strong><small>Linux, Apache, SSH, Wireshark</small><b>↗</b></button>
+                        <button class="petit-projet" data-projet="classification"><span>05</span><strong>Classification</strong><small>Python, distance, k-NN</small><b>↗</b></button>
+                        <button class="petit-projet" data-projet="saison"><span>06</span><strong>Saison Balnéaire</strong><small>SQL, PostgreSQL, modélisation</small><b>↗</b></button>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="sec" id="Tester">
+                <div class="entete-sec">
+                    <div class="partie">03 / À TESTER</div>
+                    <div>
+                        <h2>À vous de<br><em>tester.</em></h2>
+                        <p>Deux projets sont directement jouables depuis le portfolio.</p>
+                    </div>
+                </div>
+
+                <div class="grille-demo grille-demo-double">
+                    <article class="demo">
+                        <div class="demo-haut"><span>WEB — 01</span><b>2 MODES</b></div>
+                        <div class="icone-demo"><img src="assets/projects/tux/tux.png" alt="Tux"></div>
+                        <h3>Jeu Tux</h3>
+                        <p>Choisissez votre mode de jeu et essayez d’éviter les taches jusqu’à la fin du chrono.</p>
+                        <button class="lancer-demo" data-demo="tux" type="button">Jouer <span>↗</span></button>
+                    </article>
+
+                    <article class="demo">
+                        <div class="demo-haut"><span>JAVA — 02</span><b>TERMINAL</b></div>
+                        <div class="icone-demo" id="jeu-lance"><div><img src="assets/projects/findmyword/capture-jeu.png" alt="Jeu FindMyWord"></div></div>
+                        <h3>FindMyWord</h3>
+                        <p>Lancez une partie de FindMyWord directement ici.</p>
+                        <button class="lancer-demo" data-demo="findmyword" type="button">Lancer le jeu <span>↗</span></button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="sec" id="Competences">
+                <div class="entete-sec">
+                    <div class="partie">04 / Compétences</div>
+
+                    <div>
+                        <h2>Ce que j'ai<br><em>exploré.</em></h2>
+
+                        <p>
+                            Un aperçu des compétences techniques et transversaux
+                            abordés pendant ma première année de BUT Informatique.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tableau-domaines">
+
+                    <div class="domaine">
+                        <span class="numero-domaine">01</span>
+                        <strong>Développement</strong>
+
+                        <div class="liste-domaines">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML / CSS</span>
+                            <span>POO</span>
+                            <span>Algorithmique</span>
+                            <span>C</span>
+                            <span>Assembleur RISC</span>
+                            <span>Tests</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">02</span>
+                        <strong>Données & systèmes</strong>
+
+                        <div class="liste-domaines">
+                            <span>SQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Bases relationnelles</span>
+                            <span>Linux</span>
+                            <span>Git</span>
+                            <span>Réseaux</span>
+                            <span>Services</span>
+                            <span>Virtualisation</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">03</span>
+                        <strong>Maths & logique</strong>
+
+                        <div class="liste-domaines">
+                            <span>Mathématiques discrètes</span>
+                            <span>Théorie des graphes</span>
+                            <span>Théorie des ensembles</span>
+                            <span>Logique</span>
+                            <span>Outils fondamentaux</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">04</span>
+                        <strong>Projet & communication</strong>
+
+                        <div class="liste-domaines">
+                            <span>Gestion de projet</span>
+                            <span>Travail en équipe</span>
+                            <span>Recueil de besoins</span>
+                            <span>Communication</span>
+                            <span>Anglais technique</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">05</span>
+                        <strong>Environnement professionnel</strong>
+
+                        <div class="liste-domaines">
+                            <span>Notions de droit</span>
+                            <span>Notions d'économie</span>
+                            <span>Organisation</span>
+                            <span>Monde de l'entreprise</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        
+            <section class="sec" id="Parcours">
+                <div class="entete-sec">
+                    <div class="partie">05 / PARCOURS</div>
+                    <div>
+                        <h2>Ma première année<br><em>de BUT.</em></h2>
+                        <p>Au début, je voyais surtout l'informatique comme du développement. Les projets universitaires m'ont fait découvrir tout ce qu'il y a autour : données, systèmes, réseau, conception, organisation et travail en équipe.</p>
+                    </div>
+                </div>
+        
+                <div class="liste-parcours">
+                    <div class="ligne-parcours"><span>SEMESTRE 1</span><strong>Découvrir les bases</strong><p>J'ai commencé à prendre mes repères, à découvrir différentes façons de travailler et de comprendre comment gérer un projet informatique.</p></div>
+                    <div class="ligne-parcours"><span>SEMESTRE 2</span><strong>Aller plus loin</strong><p>J’ai commencé à être plus à l’aise dans mes projets, à mieux organiser mon code et à travailler sur des réalisations plus complètes, avec davantage d’autonomie.</p></div>
+                    <div class="ligne-parcours"><span>EN ÉQUIPE</span><strong>Mieux travailler ensemble</strong><p>Les projets en groupe m’ont appris à mieux échanger avec les autres, à m’adapter quand quelque chose ne se passe pas comme prévu et à garder une vision globale du projet.</p></div>
+                    <div class="ligne-parcours"><span>EN AUTONOMIE</span><strong>Prendre confiance</strong><p>Avec le temps, j’ai renforcé mon autonomie dans ma façon de travailler. Je cherche davantage par moi-même, je prends plus facilement des décisions et j’arrive mieux à avancer seul sur un projet.</p></div>
+                </div>
+            </section>
+        
+            <section class="sec" id="Apropos">
+                <div class="entete-sec">
+                    <div class="partie">06 / À PROPOS</div>
+                    <div>
+                        <h2>Un peu plus<br><em>sur moi.</em></h2>
+                    </div>
+                </div>
+        
+                <div class="apropos-contenu">
+                    <article class="apropos-carte apropos-principal">
+                        <div class="apropos-type">ADAPTABILITÉ et CURIOSITÉ</div>
+                        <h3>Deux mots qui me correspondent bien.</h3>
+                        <p>Mes nombreux déménagements, changements d’école et d'environnement m’ont appris à m’adapter rapidement, à trouver ma place et à avancer malgré les changements. La curiosité, elle, m'a progressivement amené vers l'informatique.</p>
+                        <p>Mes premiers projets sur Scratch au collège m'avaient déjà donné ce plaisir de chercher une solution, tester, corriger une erreur et voir un projet finir par fonctionner.</p>
+                    </article>
+        
+                    <article class="apropos-carte">
+                        <div class="apropos-type">POURQUOI L'INFORMATIQUE ?</div>
+                        <h3>Comprendre ce qu'il y a derrière.</h3>
+                        <p>Ce qui m'intéresse, ce n'est pas seulement d'utiliser une application, un site ou un jeu. J'aime comprendre comment c'est construit, partir d'un problème et essayer d'arriver à une solution qui fonctionne.</p>
+                    </article>
+        
+                    <article class="apropos-carte">
+                        <div class="apropos-type">POUR LA SUITE</div>
+                        <h3>Continuer à apprendre.</h3>
+                        <p>Après mon BUT, je souhaite continuer mes études pour devenir ingénieur informatique.</p>
+                        <p>Je n’ai pas encore choisi la branche dans laquelle je veux me spécialiser, mais plusieurs domaines m’intéressent, comme le développement, l’intelligence artificielle, la réalité virtuelle ou encore la cybersécurité.</p>
+                    </article>
+                </div>
+            </section>
+        
+            <section class="sec contact-sec" id="Contact">
+                <div>
+                    <div class="partie">07 / CONTACT</div>
+                    <h2>Me<br>contacter.</h2>
+                    <p>Pour un échange autour de mon parcours, de mes projets ou d'une opportunité professionnelle.</p>
+                </div>
+                <div class="liens-contact">
+                    <a href="mailto:abassekaderbhai.pro@gmail.com"><span>EMAIL</span><strong>abassekaderbhai.pro@gmail.com ↗</strong></a>
+                    <a href="https://github.com/abassekaderbhai-dev" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>abassekaderbhai-dev ↗</strong></a>
+                    <a href="https://www.linkedin.com/in/abasse-kaderbhai-768a993b7/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><strong>abasse-kaderbhai ↗</strong></a>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">© 2026 · Abasse Kaderbhai <span>~/abasse · BUT Informatique</span></footer>
+        
+        <div class="modal" id="modal" aria-hidden="true">
+            <div class="modal-contenu" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                <button class="fermer-modal" type="button" data-fermer aria-label="Fermer">×</button>
+                <div id="contenu-modal"></div>
+                <div id="contenu-demo"></div>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

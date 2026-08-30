@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+    color: #151717;
+    background: #f4f5f2;
+}
+
+body {
+    margin: 0;
+    padding: 18px;
+}
+
+.jeu {
+    max-width: 620px;
+    margin: auto;
+}
+
+.modes {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.mode {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d4d8d3;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.mode.actif {
+    background: #151717;
+    border-color: #151717;
+    color: #fff;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.infos > span {
+    background: #fff;
+    border: 1px solid #d4d8d3;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.infos b {
+    display: block;
+    margin-top: 3px;
+}
+
+#cadre {
+    position: relative;
+    width: min(500px,100%);
+    aspect-ratio: 1;
+    margin: auto;
+    border: 1px solid #b8bdb8;
+    background: linear-gradient(135deg,#eef2ed,#dfe6df);
+    overflow: hidden;
+    outline: none;
+}
+
+#cadre:focus {
+    box-shadow: 0 0 0 3px rgba(74,110,77,.2);
+}
+
+#tux {
+    position: absolute;
+    width: 54px;
+    height: auto;
+    top: 70px;
+    left: 70px;
+    transition: top .3s,left .3s;
+    user-select: none;
+    pointer-events: none;
+}
+
+.tache {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    transform: scale(4);
+    transition: top 1s,left 1s,transform 1s,opacity 3s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#game-over {
+    display: none;
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    place-items: center;
+    font-weight: 800;
+    font-size: clamp(34px,8vw,64px);
+    color: #d93535;
+    background: rgba(255,255,255,.78);
+    text-shadow: 0 1px 0 #fff;
+    z-index: 5;
+}
+
+.deplacement {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.deplacement button {
+    width: 46px;
+    height: 40px;
+    border: 1px solid #d4d8d3;
+    border-radius: 7px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.deplacement button:hover {
+    background: #e9ede8;
+}
+
+.commandes {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.commandes > button {
+    border: 0;
+    border-radius: 9px;
+    padding: 11px 18px;
+    background: #151717;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.commandes p {
+    min-height: 35px;
+    font-size: 12px;
+    color: #667067;
+}
+
+@media (max-width:480px) {
+    body {
+        padding: 10px;
+    }
+
+    .infos > span {
+        padding: 8px 4px;
+        font-size: 11px;
+    }
+
+    #tux {
+        width: 44px;
+    }
+}
