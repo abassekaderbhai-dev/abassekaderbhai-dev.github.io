@@ -95,10 +95,10 @@ let projets = {
         source: null
     },
 
-    classification: {
+    repartition: {
         couleur: '#c49cff',
         type: 'PYTHON · ALGORITHMIQUE · K-NN',
-        titre: 'Classification',
+        titre: 'Répartition Poudlard',
         intro: 'Deux travaux qui montrent l’évolution d’une même idée.',
         sujet: "Le premier projet utilise un système de scores. Le suivant va plus loin avec une distance euclidienne puis une méthode basée sur les k plus proches voisins. Pour plus d'explication, voir le dépôt sur GitHub",
         travail: [
@@ -304,6 +304,7 @@ function creerDemo(titre, type, description, contenu){
 }
 
 function ouvrirDemo(type){
+    
     contenuModal.innerHTML = '';
     modal.classList.add('demo-active');
     modal.classList.add('active');
@@ -311,12 +312,12 @@ function ouvrirDemo(type){
     document.body.classList.add('modal-active');
 
     if (type === 'tux'){
-        contenuDemo.innerHTML = creerDemo(
-            'Jeu Tux',
-            'HTML · CSS · JAVASCRIPT',
-            "Choisissez un mode : contre l'IA ou à deux joueurs. Tux se déplace avec les flèches.",
-            '<iframe class="tux-demo" src="assets/projects/tux/index.html" title="Jeu Tux"></iframe>'
+        window.open(
+            'assets/projects/tux/index.html',
+            '_blank',
+            'noopener'
         );
+        return;
     }
 
     if (type === 'calculator'){

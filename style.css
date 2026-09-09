@@ -763,7 +763,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     font: 500 10px "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
-.lancer-perso {
+.lancer-perso, .montrer-github {
     width: 100%;
     margin-top: auto;
     padding: 12px 13px;
@@ -781,11 +781,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     transition: .18s;
 }
 
-.lancer-perso span {
+.lancer-perso span, .montrer-github span {
     color: #ffb454;
 }
 
-.lancer-perso:hover {
+.lancer-perso:hover, .montrer-github:hover {
     border-color: #ffb454;
     color: #ffb454;
 }
@@ -844,12 +844,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     transform: none;
 }
 
-.lancer-perso:disabled {
+.montrer-github:disabled {
     color: #58616b;
     cursor: default;
 }
 
-.lancer-perso:disabled:hover {
+.montrer-github:disabled:hover {
     border-color: #252d36;
 }
 

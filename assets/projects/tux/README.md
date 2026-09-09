@@ -26,4 +26,4 @@ Ce projet m'a permis de mieux comprendre comment relier JavaScript aux élément
 
 ## Essayer le jeu
 
-**En ligne :** retrouve aussi le jeu sur [mon portfolio](https://abassekaderbhai-dev.github.io/#Tester), dans la partie **Jeu Tux**. La version du portfolio peut différer de celle de ce dossier.
+**En ligne :** retrouve aussi le jeu sur [mon portfolio](https://abassekaderbhai-dev.github.io/#ProjetsPerso), dans la partie **Jeu Tux**. La version du portfolio peut différer de celle de ce dossier.

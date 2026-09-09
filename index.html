@@ -17,7 +17,6 @@
             <nav class="items" id="menu" aria-label="Navigation principale">
                 <a href="#ProjetsPerso">Projets perso</a>
                 <a href="#Projets">Universitaires</a>
-                <a href="#Tester">À tester</a>
                 <a href="#Competences">Compétences</a>
                 <a href="#Parcours">Parcours</a>
                 <a href="#Apropos">À propos</a>
@@ -107,7 +106,7 @@
                             <h3>Jeu Tux</h3>
                             <p>Je l'ai ensuite largement fait évoluer en ajoutant un score, un chrono, des collisions et deux modes de jeu : contre l'ordinateur ou à deux joueurs.</p>
                             <div class="evolution-perso"><span>Score</span><span>Chrono</span><span>Collisions</span><span>Mode ordinateur</span><span>2 joueurs</span></div>
-                            <button class="lancer-perso" data-demo="tux" type="button">Jouer <span>↗</span></button>
+                            <a class="lancer-perso" href="assets/projects/tux/index.html" target="_blank">Jouer <span>↗</span></a>
                         </div>
                     </article>
 
@@ -116,7 +115,7 @@
                         <h3>Calculatrice</h3>
                         <p>Une calculatrice réalisée en Python avec Tkinter. Le projet présenté ici reste le fichier Python d'origine.</p>
                         <div class="apercu-perso icone-calculatrice-perso"><img src="assets/projects/calculatrice/image-calc.png" alt="calculatrice"></div>
-                        <button class="lancer-perso" data-demo="calculator" type="button">Voir le projet <span>↗</span></button>
+                        <a class="montrer-github" href="https://github.com/abassekaderbhai-dev/Python/tree/main/Calculatrice" target="_blank" >Voir sur GitHub <span>↗</span></a>
                     </article>
 
                     <article class="projet-perso">
@@ -124,7 +123,7 @@
                         <h3>Tours de Hanoï</h3>
                         <p>Un projet Python autour de la récursivité, avec une représentation graphique animée à l'aide de Turtle.</p>
                         <div class="apercu-perso apercu-hanoi"><img src="assets/projects/hanoi/image.png" alt="Hanoï"></div>
-                        <button class="lancer-perso" data-demo="hanoi" type="button">Voir le projet <span>↗</span></button>
+                        <a class="montrer-github" href="https://github.com/abassekaderbhai-dev/Python/tree/main/Hanoi" target="_blank" >Voir sur GitHub <span>↗</span></a>
                     </article>
 
                     <article class="projet-perso projet-attente">
@@ -134,7 +133,7 @@
                         <div class="apercu-perso apercu-morpion">
                         <span>X</span><span></span><span>O</span><span></span><span>X</span><span></span><span>O</span><span></span><span>X</span>
                         </div>
-                        <button class="lancer-perso" type="button" disabled>À venir</button>
+                        <button class="montrer-github" type="button" disabled>À venir</button>
                     </article>
                 </div>
             </section>
@@ -190,37 +189,9 @@
                     <div class="titre-secondaire">AUTRES TRAVAUX</div>
                     <div class="grille-secondaire">
                         <button class="petit-projet" data-projet="systems"><span>04</span><strong>Systèmes & réseau</strong><small>Linux, Apache, SSH, Wireshark</small><b>↗</b></button>
-                        <button class="petit-projet" data-projet="classification"><span>05</span><strong>Classification</strong><small>Python, distance, k-NN</small><b>↗</b></button>
+                        <button class="petit-projet" data-projet="repartition"><span>05</span><strong>Répartition Poudlard</strong><small>Python, distance, k-NN</small><b>↗</b></button>
                         <button class="petit-projet" data-projet="saison"><span>06</span><strong>Saison Balnéaire</strong><small>SQL, PostgreSQL, modélisation</small><b>↗</b></button>
                     </div>
-                </div>
-            </section>
-        
-            <section class="sec" id="Tester">
-                <div class="entete-sec">
-                    <div class="partie">03 / À TESTER</div>
-                    <div>
-                        <h2>À vous de<br><em>tester.</em></h2>
-                        <p>Deux projets sont directement jouables depuis le portfolio.</p>
-                    </div>
-                </div>
-
-                <div class="grille-demo grille-demo-double">
-                    <article class="demo">
-                        <div class="demo-haut"><span>WEB — 01</span><b>2 MODES</b></div>
-                        <div class="icone-demo"><img src="assets/projects/tux/tux.png" alt="Tux"></div>
-                        <h3>Jeu Tux</h3>
-                        <p>Choisissez votre mode de jeu et essayez d’éviter les taches jusqu’à la fin du chrono.</p>
-                        <button class="lancer-demo" data-demo="tux" type="button">Jouer <span>↗</span></button>
-                    </article>
-
-                    <article class="demo">
-                        <div class="demo-haut"><span>JAVA — 02</span><b>TERMINAL</b></div>
-                        <div class="icone-demo" id="jeu-lance"><div><img src="assets/projects/findmyword/capture-jeu.png" alt="Jeu FindMyWord"></div></div>
-                        <h3>FindMyWord</h3>
-                        <p>Lancez une partie de FindMyWord directement ici.</p>
-                        <button class="lancer-demo" data-demo="findmyword" type="button">Lancer le jeu <span>↗</span></button>
-                    </article>
                 </div>
             </section>
 
