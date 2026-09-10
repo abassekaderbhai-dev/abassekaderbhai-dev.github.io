@@ -1,8 +1,5 @@
-import importlib
+import hanoi
 import time
-
-
-hanoi = importlib.import_module("hanoi")
 
 
 def resoudre_hanoi(nb_disques, depart, arrivee, intermediaire):
