@@ -26,7 +26,7 @@
         
         <main>
             <section class="accueil sec" id="Accueil">
-                <div class="etudiant"><span class="point"></span>~/abasse/PORTFOLIO</div>
+                <div class="etudiant"><span id="point"></span><span id="chemin">~/abasse/portfolio</span></div>
                 <div class="accueil-contenu">
                     <div>
                         <h1>Abasse<br><em>Kaderbhai</em></h1>
@@ -157,7 +157,7 @@
                             <div class="technologies"><span>POO</span><span>JAVA</span><span>JSON</span></div>
                         </div>
                         <div class="apercu-projet apercu-code" id="img-findmyword"><img src="assets/projects/findmyword/capture-findmyword.png" alt="Screen du jeu FindMyWord" loading="lazy"></div>
-                        <button class="ouvrir-projet" aria-label="Ouvrir FindMyWord">↗</button>
+                        <button class="ouvrir-projet">↗</button>
                     </article>
         
                     <article class="projet" data-projet="dataguardians">
@@ -169,7 +169,7 @@
                             <div class="technologies"><span>POSTGRESQL</span><span>SQL</span><span>GRAFANA</span></div>
                         </div>
                         <div class="apercu-projet" id="img-dataGuardians"><img src="assets/projects/dataguardians/grafana/01_Indicateurs_cles.png" alt="Dashboard DataGuardians" loading="lazy"></div>
-                        <button class="ouvrir-projet" aria-label="Ouvrir DataGuardians">↗</button>
+                        <button class="ouvrir-projet">↗</button>
                     </article>
         
                     <article class="projet" data-projet="mandelbrot">
@@ -181,7 +181,7 @@
                             <div class="technologies"><span>NOMBRES COMPLEXES</span><span>PYTHON</span><span>ALGORITHMIQUE</span></div>
                         </div>
                         <div class="apercu-projet" id="img-mandelbrot"><img src="assets/projects/mandelbrot/mandelbrot-original.png" alt="Ensemble de Mandelbrot généré avec le code du projet" loading="lazy"></div>
-                        <button class="ouvrir-projet" aria-label="Ouvrir Mandelbrot">↗</button>
+                        <button class="ouvrir-projet">↗</button>
                     </article>
                 </div>
         
@@ -348,15 +348,6 @@
         </main>
         
         <footer class="footer">© 2026 · Abasse Kaderbhai <span>~/abasse · BUT Informatique</span></footer>
-        
-        <div class="modal" id="modal" aria-hidden="true">
-            <div class="modal-contenu" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-                <button class="fermer-modal" type="button" data-fermer aria-label="Fermer">×</button>
-                <div id="contenu-modal"></div>
-                <div id="contenu-demo"></div>
-            </div>
-        </div>
-        
         <script src="script.js"></script>
     </body>
 </html>

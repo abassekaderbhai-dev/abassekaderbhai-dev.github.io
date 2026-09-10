@@ -155,7 +155,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     color: #858c94;
 }
 
-.point {
+#point {
     display: inline-block;
     width: 7px;
     height: 7px;
@@ -163,6 +163,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     background: #ffb454;
     box-shadow: 0 0 14px rgba(255,180,84,.45);
     margin-right: 8px;
+}
+
+#chemin {
+    text-transform: lowercase;
 }
 
 .accueil {
