@@ -136,20 +136,7 @@ let projets = {
         ],
         source: 'assets/projects/saison-balneaire/sql/tables_finales.sql'
     }
-};
-
-function protegerTexte(texte){
-    let caracteres = {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#39;'
-    };
-
-    return String(texte ?? '').replace(/[&<>"']/g, caractere => caracteres[caractere]);
-}
- 
+}; 
 
 let barre = document.getElementById('barre-nav');
 let menu = document.getElementById('menu');
@@ -168,7 +155,7 @@ for (let i = 0; i < liensMenu.length; i++){
     liensMenu[i].addEventListener('click', () => menu.classList.remove('active'));
 }
 
-let sections = document.querySelectorAll('main > section[id]');
+let sections = document.querySelectorAll('body > section[id]');
 let observer = new IntersectionObserver((elements) => {
     elements.forEach(element => {
         if (element.isIntersecting){
