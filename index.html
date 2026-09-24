@@ -8,22 +8,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="bruit"></div>
-        
         <header class="header">
             <a class="portfolio" href="#Accueil"><span>~/</span>abasse</a>
-            <button class="menu-mobile" id="barre-nav" type="button" aria-label="Ouvrir le menu">MENU</button>
-            <nav class="items" id="menu" aria-label="Navigation principale">
+
+            <nav class="items" id="menu">
                 <a href="#ProjetsPerso">Projets perso</a>
                 <a href="#Projets">Universitaires</a>
                 <a href="#Competences">Compétences</a>
                 <a href="#Parcours">Parcours</a>
                 <a href="#Apropos">À propos</a>
             </nav>
-            <a class="contact-nav" href="#Contact">Contact <span>↗</span></a>
+            
+            <a href="#Contact" id="contact-nav">Contact</a>
+            <button class="menu-mobile" id="barre-nav" type="button">MENU</button>
         </header>
         
-        <body>
+        <main>
             <section class="accueil sec" id="Accueil">
                 <div class="etudiant"><span id="point"></span><span id="chemin">~/abasse/portfolio</span></div>
                 <div class="accueil-contenu">
@@ -37,9 +37,9 @@
                         </div>
                     </div>
         
-                    <aside class="profil-card fenetre" aria-label="Mon profil">
+                    <aside class="profil-card fenetre">
                         <div class="barre-fenetre">
-                            <div class="points-fenetre" aria-hidden="true">
+                            <div class="points-fenetre">
                                 <i></i>
                                 <i></i>
                                 <i></i>
@@ -183,7 +183,7 @@
                 <div class="projets-secondaires">
                     <div class="titre-secondaire">AUTRES TRAVAUX</div>
                     <div class="grille-secondaire">
-                        <button class="petit-projet" data-projet="systems"><span>04</span><strong>Systèmes & réseau</strong><small>Linux, Apache, SSH, Wireshark</small><b>↗</b></button>
+                        <button class="petit-projet" data-projet="systemes"><span>04</span><strong>Systèmes & réseau</strong><small>Linux, Apache, SSH, Wireshark</small><b>↗</b></button>
                         <button class="petit-projet" data-projet="repartition"><span>05</span><strong>Répartition Poudlard</strong><small>Python, distance, k-NN</small><b>↗</b></button>
                         <button class="petit-projet" data-projet="saison"><span>06</span><strong>Saison Balnéaire</strong><small>SQL, PostgreSQL, modélisation</small><b>↗</b></button>
                     </div>
@@ -353,7 +353,7 @@
                     <a href="https://www.linkedin.com/in/abasse-kaderbhai-768a993b7/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><strong>abasse-kaderbhai ↗</strong></a>
                 </div>
             </section>
-        </body>
+        </main>
         
         <footer class="footer">© 2026 · Abasse Kaderbhai <span>Développeur junior</span></footer>
         <script src="script.js"></script>
