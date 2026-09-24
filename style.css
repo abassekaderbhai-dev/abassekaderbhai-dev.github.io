@@ -80,12 +80,12 @@ body::before {
     letter-spacing: .09em;
 }
 
-.items a, .contact-nav {
+.items a {
     color: #858c94;
     transition: color .18s ease;
 }
 
-.items a:hover, .items a.active, .contact-nav:hover {
+.items a:hover, .items a.active {
     color: #ece8df;
 }
 
@@ -97,15 +97,37 @@ body::before {
     margin-top: 5px;
 }
 
-.contact-nav {
-    justify-self: end;
-    font: 500 13px Consolas, monospace;
+.items a,
+#contact-nav {
+    color: #858c94;
+    font: 500 12px monospace;
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: .09em;
+    transition: color .18s ease;
 }
 
-.contact-nav span {
-    color: #6fd3d0;
+.items a:hover,
+.items a.active,
+#contact-nav:hover,
+#contact-nav.active {
+    color: #ece8df;
+}
+
+.items a.active:after,
+#contact-nav.active:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ffb454;
+    margin-top: 5px;
+}
+
+#contact-nav {
+    justify-self: end;
+}
+
+#contact-mobile {
+    display: none;
 }
 
 .menu-mobile {
@@ -117,6 +139,7 @@ body::before {
     font: 12px Consolas, monospace;
     cursor: pointer;
 }
+
 
 .sec {
     max-width: 1280px;
@@ -291,7 +314,7 @@ body::before {
     top: -55px;
     width: 210px;
     height: 210px;
-    border: 1px solid rgba(111,211,208,.25);
+    border: 1px solid #6FD3D040;
     border-radius: 50%;
     pointer-events: none;
 }
