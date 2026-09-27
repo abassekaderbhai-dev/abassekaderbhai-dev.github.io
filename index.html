@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Abasse KADERBHAI </title>
+        <link rel="icon" href="ressources/logo.png" sizes="any">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a class="portfolio" href="#Accueil"><span>~/</span>abasse</a>
+
+            <nav class="items" id="menu">
+                <a href="#ProjetsPerso">Projets perso</a>
+                <a href="#Projets">Universitaires</a>
+                <a href="#Competences">Compétences</a>
+                <a href="#Parcours">Parcours</a>
+                <a href="#Apropos">À propos</a>
+            </nav>
+            
+            <a href="#Contact" id="contact-nav">Contact</a>
+            <button class="menu-mobile" id="barre-nav" type="button">MENU</button>
+        </header>
+        
+        <main>
+            <section class="accueil sec" id="Accueil">
+                <div class="etudiant"><span id="point"></span><span id="chemin">~/abasse/portfolio</span></div>
+                <div class="accueil-contenu">
+                    <div>
+                        <h1>Abasse<br><span>Kaderbhai</span></h1>
+                        <p class="description-accueil">Ce qui me plaît dans l’informatique, c’est de pouvoir partir d’une idée et essayer de la transformer en quelque chose qui fonctionne.</p>
+                        <div class="bouttons">
+                            <a class="boutton boutton-principal" href="#ProjetsPerso">Voir mes projets <span>↓</span></a>
+                            <a class="boutton boutton-principal" href="https://github.com/abassekaderbhai-dev" target="_blank" rel="noreferrer">GitHub ↗</a>
+                            <a class="boutton boutton-principal" href="ressources/cv/CV_KADERBHAI_Abasse_BUT INFORMATIQUE.pdf" target="_blank" rel="noreferrer">CV - PDF ↗</a>
+                        </div>
+                    </div>
+        
+                    <aside class="profil-card fenetre">
+                        <div class="barre-fenetre">
+                            <div class="points-fenetre">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <span>~/abasse/profile-card</span>
+                            <b>AK</b>
+                        </div>
+                        <div class="profil-contenu">
+                            <div class="profil-haut">
+                                <span>PROFIL</span>
+                                <b>La Réunion, France</b>
+                            </div>
+                            <div class="profil-identite">
+                                <div id="img-profil"><img src="ressources/photo.png" alt=""></div>
+                                <div>
+                                    <h2>Étudiant à l'IUT de Villetaneuse, Université de Sorbonne Paris Nord</h2>
+                                    <span>19 ans</span>
+                                </div>
+                            </div>
+                            <p class="profil-texte">
+                                Je suis né et j’ai grandi à La Réunion avant de m’installer en Île-de-France pour poursuivre mes études en informatique.
+                            </p>
+                            <div class="profil-infos">
+                                <div>
+                                    <span>Parcours</span>
+                                    <strong>BUT Informatique : 2e année <br> 1re année confirmée avec les félicitations du jury </strong>
+                                </div>
+                                <div>
+                                    <span>Objectif</span>
+                                    <strong>Devenir ingénieur informatique</strong>
+                                </div>
+                                <div>
+                                    <span>Technologies</span>
+                                    <strong>Java, Python, SQL, Web, Linux</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </section>
+        
+
+            <section class="sec" id="ProjetsPerso">
+                <div class="entete-sec">
+                    <div class="partie">01 / PROJETS PERSO</div>
+                    <div>
+                        <h2>Mes projets<br><span>personnels.</span></h2>
+                        <p>Des projets réalisés ou prolongés de mon côté, avec plus de liberté pour expérimenter et aller plus loin.</p>
+                    </div>
+                </div>
+
+                <div class="grille-perso">
+                    <article class="projet-perso projet-perso-principal">
+                        <div class="perso-visuel">
+                            <div class="perso-haut"><span>WEB — 01</span><b>HTML / CSS / JS</b></div>
+                            <div class="apercu-perso apercu-tux"><img src="ressources/projects/tux/tux.png" alt="Jeu Tux" loading="lazy"></div>
+                        </div>
+
+                        <div class="perso-contenu">
+                            <div class="origine-perso"><span>POINT DE DÉPART</span>Un exercice à l'université très simple autour du déplacement d'un personnage en JavaScript.</div>
+                            <h3>Jeu Tux</h3>
+                            <p>Je l'ai ensuite largement fait évoluer en ajoutant un score, un chrono, des collisions et deux modes de jeu : contre l'ordinateur ou à deux joueurs.</p>
+                            <a class="lancer-perso" href="ressources/projects/tux/index.html" target="_blank">Jouer <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projet-perso">
+                        <div class="perso-haut"><span>PYTHON — 02</span><b>TKINTER</b></div>
+                        <h3>Calculatrice</h3>
+                        <p>Une calculatrice réalisée en Python avec Tkinter. </p>
+                        <div class="apercu-perso apercu"><img src="ressources/projects/calculatrice/image-calc.png" alt="calculatrice"></div>
+                        <a class="montrer-github" href="https://github.com/abassekaderbhai-dev/Python/tree/main/Calculatrice" target="_blank" >Voir sur GitHub <span>↗</span></a>
+                    </article>
+
+                    <article class="projet-perso">
+                        <div class="perso-haut"><span>PYTHON — 03</span><b>RÉCURSIVITÉ</b></div>
+                        <h3>Tours de Hanoï</h3>
+                        <p>Un projet Python autour de la récursivité, avec une représentation graphique animée à l'aide de Turtle.</p>
+                        <div class="apercu-perso apercu"><img src="ressources/projects/hanoi/image.png" alt="Hanoï"></div>
+                        <a class="montrer-github" href="https://github.com/abassekaderbhai-dev/Python/tree/main/Hanoi" target="_blank" >Voir sur GitHub <span>↗</span></a>
+                    </article>
+
+                    <article class="projet-perso projet-attente">
+                        <div class="perso-haut"><span>04</span><b>À VENIR</b></div>
+                        <h3>Morpion</h3>
+                        <p>Un projet personnel que je souhaite intégrer prochainement à cette partie du portfolio où j'utiliserai Python et Php.</p>
+                        <div class="apercu-perso apercu"><img src="ressources/projects/morpion/image-morpion.png" alt="Morpion"></div>
+                        <button class="montrer-github" type="button" disabled>À venir</button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="sec" id="Projets">
+                <div class="entete-sec">
+                    <div class="partie">02 / PROJETS UNIVERSITAIRES</div>
+                    <div>
+                        <h2>Mes<br><span>projets.</span></h2>
+                        <p>J'en ai gardé trois en avant parce qu'ils montrent des facettes différentes de ce que j'ai pu travailler durant cette première année : Java, données et algorithmique.</p>
+                    </div>
+                </div>
+        
+                <div class="liste-projets">
+                    <article class="projet">
+                        <div class="numero-projet">01</div>
+                        <div class="contenu-projet">
+                            <div class="chemin-projet">~/work/findmyword</div>
+                            <h3>FindMyWord</h3>
+                            <p>Le projet Java qui m'a le plus fait progresser sur la structure d'une application : plusieurs classes, des interfaces, des données JSON et des tests.</p>
+                            <div class="technologies"><span>POO</span><span>JAVA</span><span>JSON</span></div>
+                        </div>
+                        <div class="apercu-projet apercu-code" id="img-findmyword"><img src="ressources/projects/findmyword/capture-findmyword.png" alt="Screen du jeu FindMyWord" loading="lazy"></div>
+                        <button class="ouvrir-projet">↗</button>
+                    </article>
+        
+                    <article class="projet">
+                        <div class="numero-projet">02</div>
+                        <div class="contenu-projet">
+                            <div class="chemin-projet">~/work/dataguardians</div>
+                            <h3>DataGuardians</h3>
+                            <p>Un projet de groupe autour des stations-service, avec une base PostgreSQL, des contraintes, des requêtes et des visualisations Grafana.</p>
+                            <div class="technologies"><span>POSTGRESQL</span><span>SQL</span><span>GRAFANA</span></div>
+                        </div>
+                        <div class="apercu-projet" id="img-dataGuardians"><img src="ressources/projects/dataguardians/grafana/01_Indicateurs_cles.png" alt="Dashboard DataGuardians" loading="lazy"></div>
+                        <button class="ouvrir-projet">↗</button>
+                    </article>
+        
+                    <article class="projet">
+                        <div class="numero-projet">03</div>
+                        <div class="contenu-projet">
+                            <div class="chemin-projet">~/work/mandelbrot</div>
+                            <h3>Mandelbrot</h3>
+                            <p>Un projet Python où j'ai travaillé les nombres complexes et l'algorithmique pour arriver à un résultat graphique directement visible.</p>
+                            <div class="technologies"><span>NOMBRES COMPLEXES</span><span>PYTHON</span><span>ALGORITHMIQUE</span></div>
+                        </div>
+                        <div class="apercu-projet" id="img-mandelbrot"><img src="ressources/projects/mandelbrot/mandelbrot-original.png" alt="Ensemble de Mandelbrot généré avec le code du projet" loading="lazy"></div>
+                        <button class="ouvrir-projet">↗</button>
+                    </article>
+                </div>
+        
+                <div class="projets-secondaires">
+                    <div class="titre-secondaire">AUTRES TRAVAUX</div>
+                    <div class="grille-secondaire">
+                        <button class="petit-projet"><span>04</span><strong>Systèmes & réseau</strong><small>Linux, Apache, SSH, Wireshark</small><b>↗</b></button>
+                        <button class="petit-projet"><span>05</span><strong>Répartition Poudlard</strong><small>Python, distance, k-NN</small><b>↗</b></button>
+                        <button class="petit-projet"><span>06</span><strong>Saison Balnéaire</strong><small>SQL, PostgreSQL, modélisation</small><b>↗</b></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec" id="Competences">
+                <div class="entete-sec">
+                    <div class="partie">04 / Compétences</div>
+
+                    <div>
+                        <h2>Ce que j'ai<br><span>exploré.</span></h2>
+
+                        <p>
+                            Un aperçu des compétences techniques et transversaux
+                            abordés pendant ma première année de BUT Informatique.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tableau-domaines">
+
+                    <div class="domaine">
+                        <span class="numero-domaine">01</span>
+                        <strong>Développement</strong>
+
+                        <div class="liste-domaines">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML / CSS</span>
+                            <span>POO</span>
+                            <span>Algorithmique</span>
+                            <span>C</span>
+                            <span>Assembleur RISC</span>
+                            <span>Tests</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">02</span>
+                        <strong>Données & systèmes</strong>
+
+                        <div class="liste-domaines">
+                            <span>SQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Bases relationnelles</span>
+                            <span>Linux</span>
+                            <span>Git</span>
+                            <span>Réseaux</span>
+                            <span>Services</span>
+                            <span>Virtualisation</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">03</span>
+                        <strong>Maths & logique</strong>
+
+                        <div class="liste-domaines">
+                            <span>Mathématiques discrètes</span>
+                            <span>Théorie des graphes</span>
+                            <span>Théorie des ensembles</span>
+                            <span>Outils fondamentaux</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">04</span>
+                        <strong>Projet & communication</strong>
+
+                        <div class="liste-domaines">
+                            <span>Gestion de projet</span>
+                            <span>Travail en équipe</span>
+                            <span>Recueil de besoins</span>
+                            <span>Communication</span>
+                            <span>Anglais technique</span>
+                        </div>
+                    </div>
+
+                    <div class="domaine">
+                        <span class="numero-domaine">05</span>
+                        <strong>Environnement professionnel</strong>
+
+                        <div class="liste-domaines">
+                            <span>Notions de droit</span>
+                            <span>Notions d'économie</span>
+                            <span>Organisation</span>
+                            <span>Monde de l'entreprise</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        
+            <section class="sec" id="Parcours">
+                <div class="entete-sec">
+                    <div class="partie">05 / PARCOURS</div>
+                    <div>
+                        <h2>Ma première année<br><span>de BUT.</span></h2>
+                        <p>Au début, je voyais surtout l'informatique comme du développement. Les projets universitaires m'ont fait découvrir tout ce qu'il y a autour : données, systèmes, réseau, conception, organisation et travail en équipe.</p>
+                    </div>
+                </div>
+        
+                <div class="liste-parcours">
+                    <div class="ligne-parcours"><span>SEMESTRE 1</span><strong>Découvrir les bases</strong><p>J'ai commencé à prendre mes repères, à découvrir différentes façons de travailler et de comprendre comment gérer un projet informatique.</p></div>
+                    <div class="ligne-parcours"><span>SEMESTRE 2</span><strong>Aller plus loin</strong><p>J’ai commencé à être plus à l’aise dans mes projets, à mieux organiser mon code et à travailler sur des réalisations plus complètes, avec davantage d’autonomie.</p></div>
+                    <div class="ligne-parcours"><span>EN ÉQUIPE</span><strong>Mieux travailler ensemble</strong><p>Les projets en groupe m’ont appris à mieux échanger avec les autres, à m’adapter quand quelque chose ne se passe pas comme prévu et à garder une vision globale du projet.</p></div>
+                    <div class="ligne-parcours"><span>EN AUTONOMIE</span><strong>Prendre confiance</strong><p>Avec le temps, j’ai renforcé mon autonomie dans ma façon de travailler. Je cherche davantage par moi-même, je prends plus facilement des décisions et j’arrive mieux à avancer seul sur un projet.</p></div>
+                </div>
+            </section>
+        
+            <section class="sec" id="Apropos">
+                <div class="entete-sec">
+                    <div class="partie">06 / À PROPOS</div>
+                    <div>
+                        <h2>Un peu plus<br><span>sur moi.</span></h2>
+                    </div>
+                </div>
+        
+                <div class="apropos-contenu">
+                    <article class="apropos-carte apropos-principal">
+                        <div class="apropos-type" id="adjectifs">ADAPTABILITÉ et CURIOSITÉ</div>
+                        <h3>Deux mots qui me correspondent bien.</h3>
+                        <p>Mes nombreux déménagements, changements d’école et d'environnement m’ont appris à m’adapter rapidement, à trouver ma place et à avancer malgré les changements.</p>
+                        <p>La curiosité, elle, m'a progressivement amené vers l'informatique. <br> Mes premiers projets sur Scratch au collège m'avaient déjà donné ce plaisir de chercher une solution, tester, corriger une erreur et voir un projet finir par fonctionner.</p>
+                    </article>
+
+                    <article class="apropos-carte">
+                        <div class="apropos-type">MES CENTRES D'INTÉRÊT</div>
+                        <h3>Au-delà de l'informatique.</h3>
+                        <p>En dehors de l’informatique, je m'entraîne à la salle de sport, jouer aux échecs, coder et profiter des activités en plein air. J’aime aussi m’investir dans la vie associative. Quand je rentre à La Réunion, passer les vacances, je n'hésite pas à aller au "Camp PAPOU", une association de boxe où je participe aux entraînements et aide à encadrer les juniors.</p>
+                    </article>
+        
+                    <article class="apropos-carte">
+                        <div class="apropos-type">POURQUOI L'INFORMATIQUE ?</div>
+                        <h3>Comprendre ce qu'il y a derrière.</h3>
+                        <p>Ce qui m'intéresse, ce n'est pas seulement d'utiliser une application, un site ou un jeu. J'aime comprendre comment c'est construit, partir d'un problème et essayer d'arriver à une solution qui fonctionne.</p>
+                    </article>
+                    
+                    <article class="apropos-carte">
+                        <div class="apropos-type">POURQUOI LE BUT INFORMATIQUE ?</div>
+                        <h3>Un choix d'équilibre.</h3>
+                        <p>Lors de mon orientation après le bac, j’ai eu le choix entre plusieurs filières (CPGE, BTS, Licence, BUT…). Le BUT Informatique correspondait le mieux à mon profil et à mes aspirations, notamment pour son équilibre entre la théorie et la pratique, mais aussi pour la possibilité de découvrir le monde professionnel à travers les stages et l’alternance.</p>
+                    </article>
+
+                    <article class="apropos-carte">
+                        <div class="apropos-type">POUR LA SUITE</div>
+                        <h3>Continuer à apprendre.</h3>
+                        <p>Après mon BUT, je souhaite continuer mes études pour devenir ingénieur informatique.</p>
+                        <p>Je n’ai pas encore choisi la branche dans laquelle je veux me spécialiser, mais plusieurs domaines m’intéressent, comme le développement, l’intelligence artificielle, la réalité virtuelle ou encore la cybersécurité.</p>
+                    </article>
+                </div>
+            </section>
+        
+            <section class="sec contact-sec" id="Contact">
+                <div id="contact-entete">
+                    <div class="partie">07 / CONTACT</div>
+                    <div>
+                        <h2>Me<br><span>contacter.</span></h2>
+                        <p>Pour un échange autour de mon parcours, de mes projets ou d'une opportunité professionnelle.</p>
+                    </div>
+                </div>
+                <div class="liens-contact">
+                    <a href="mailto:abassekaderbhai.pro@gmail.com"><span>EMAIL</span><strong>abassekaderbhai.pro@gmail.com ↗</strong></a>
+                    <a href="https://github.com/abassekaderbhai-dev" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>abassekaderbhai-dev ↗</strong></a>
+                    <a href="https://www.linkedin.com/in/abasse-kaderbhai-768a993b7/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><strong>abasse-kaderbhai ↗</strong></a>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">© 2026 · Abasse Kaderbhai <span>Développeur junior</span></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
